@@ -1,0 +1,41 @@
+Bullet Hell Shooting Game
+1. We will design total 4 phases in the whole game, and take approximately 3 minutes.
+[1] First phase: the player fights with small grunts from 00;00 to 00:30, and small grunts only have one 
+    kind of attack. We put the easy phase at the beginning to let the player be familiar with game controlling.
+[2] Second phase: the mid boss shows up at 00:30, the stage (background) changes, 
+    and the BGM also changes to nervous music. The mid boss has specific movement 
+    and has complicated attacks. Before fighting the mid boss, the player acquires 
+    a new kind of attack that is more powerful and has a cool down time. If the player
+    does not destroy the boss before 01:00, the boss will explode and game over.
+[3] Third phase: more grants and powerful grants show up from 01:00 to 01:30. The stage and BGM changes 
+    to same as the first phase. Powerful grants have two kinds of attacks and is harder 
+    to destroy than small grants. For example, if the player need two attacks to destroy 
+    small grunts, then Powerful grants need four attacks or one powerful attack.
+[4] Final phase: the final boss appears at 01:30, the stage (background) changes, 
+    and the BGM also changes to nervous music. Before fighting with it, the player 
+    acquires an ultimate attack that can hurt the boss about 2/3 blood, but this attack can 
+    only be used three times. The player also can accelerate speed to avoid attacks from the boss,
+    and acceleration also has a cool down time. The final boss sometime launches much more dense attacks 
+    that the player cannot avoid by regular movements, so acquired acceleration is now useful to escape these attacks. 
+    The final boss totally has four types, and the third and forth types makes the boss look different. 
+    In every type changing, its blood is refilled. Finally, if the player didn¡¦t defeat the boss before 03:00, 
+    the boss will explode, and then the player will lose and game over.
+2. For the game system:
+[1] The highest score exists forever: we will store the highest score and show it even if the game shot down.
+[2] The effect of special attacks: when the mid boss or final boss suffer the special attacks from the player, 
+    they will be frozen for 3 seconds, but the regular attack does not have this effect.
+[3] The blood of the player: when changes the phase, the blood of the player is refilled.
+[4] The record function: the record function only can record which phase the player has completed. 
+    After loading the record file, the player can play the next phase that he does not complete. 
+    The player can find the record in the option of the beginning screen.
+[5] Calculation of score: Destroying a small grant gets 100 points, 
+    destroying a powerful grant gets 300 points, destroying the mid boss gets 500 points, and destroying the final boss get 1000 points. 
+    In addition, if the player successfully attacks any enemies by using regular attacks, he get 50 points. 
+    If attack by special attack, he get no point.
+3. For the difficulty of the game:
+[1] At the beginning screen before starting play, the player can click the option and then difficulty to select.
+    There are 4 levels from 0 to 3 in the game.
+[2] The zeroth level: the player never be hurt from any enemy. He is in invincible state.
+[3] The second level: this is the regular level.
+[4] The third level: all enemies are much hard to destroy.
+[5] The forth level: the player has a half of blood in every phase.

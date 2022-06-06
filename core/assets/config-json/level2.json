@@ -1,0 +1,122 @@
+{
+	"player":
+	{
+		"lives": 8,
+		"bombs": 10,
+		"award-prob": 0.5
+	},
+	"enemy":
+	[
+		{
+			"hp": 1,
+			"texture": "enemyRed3.png",
+			"x": 30,
+			"y" : 800,
+			"width": 30,
+			"height": 30,
+			"movement": "LMovement",
+			"laser": [
+				{
+					"texture": "laserRed03.png",
+					"strategy": "NormalLaserStrategy",
+					"movement": "StraightLineMovement",
+					"effectiveFrom": 0
+				}
+			],
+			"interval": 1,
+			"count": 10,
+			"reward": 100,
+			"spawnTime": 3,
+			"isFinalBoss": false
+		},
+		{
+			"hp": 20,
+			"texture": "midboss.png",
+			"x": 250,
+			"y": 800,
+			"width": 100,
+			"height": 100,
+			"movement": "MidBossMovement",
+			"laser": [
+				{
+					"texture": "laserRed03.png",
+					"strategy": "CircleLaserStrategy",
+					"movement": "StraightLineMovement",
+					"effectiveFrom": 0
+				},
+				{
+					"texture": "laserRed03.png",
+					"strategy": "HeavyLaserStrategy",
+					"movement": "StraightLineMovement",
+					"effectiveFrom": 10
+				}
+			],
+			"interval": 1,
+			"count": 1,
+			"reward": 1000,
+			"spawnTime": 30,
+			"isFinalBoss": false
+		},{
+		"hp": 3,
+		"texture": "enemyShipB.png",
+		"x": 450,
+		"y": 800,
+		"width": 50,
+		"height": 50,
+		"movement": "ReverseLMovement",
+		"laser": [
+			{
+				"texture": "laserRed03.png",
+				"strategy": "NormalLaserStrategy",
+				"movement": "StraightLineMovement",
+				"effectiveFrom": 0
+			}
+		],
+		"interval": 1,
+		"count": 10,
+		"reward": 300,
+		"spawnTime": 60,
+		"isFinalBoss": false
+	},
+		{
+			"hp": 40,
+			"texture": "boss.png",
+			"x": 250,
+			"y": 800,
+			"width": 100,
+			"height": 100,
+			"movement": "BossMovement",
+			"laser": [
+				{
+					"texture": "laserRed03.png",
+					"strategy": "NormalLaserStrategy",
+					"movement": "StraightLineMovement",
+					"effectiveFrom": 0
+				},
+				{
+					"texture": "laserRed03.png",
+					"strategy": "CircleLaserStrategy",
+					"movement": "StraightLineMovement",
+					"effectiveFrom": 15
+				},
+				{
+					"texture": "laserRed03.png",
+					"strategy": "HeavyLaserStrategy",
+					"movement": "StraightLineMovement",
+					"effectiveFrom": 17
+				},
+				{
+					"texture": "laserRed03.png",
+					"strategy": "StringLaserStrategy",
+					"movement": "StraightLineMovement",
+					"effectiveFrom": 30
+				}
+			],
+			"interval": 1,
+			"count": 1,
+			"reward": 2000,
+			"spawnTime": 80,
+			"isFinalBoss": true
+		}
+	]
+}
